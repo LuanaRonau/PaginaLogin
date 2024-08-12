@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Página de Login</title>
+</head>
+<body>
+    <main>
+        <div id="left-column">
+            <header id="logo">
+                <img src="assets\Vector.svg" alt="Logo da Vertigo" id="logo-icone">
+                <h1 id="marca">Vertigo</h1>
+            </header>
+
+            <div id="content">
+                <div id="texto">
+                    <h1 id="titulo">Acesse a plataforma</h1>
+                    <h2 id="descricao">Faça login ou registre-se para começar a construir seus projetos ainda hoje.</h2>
+                </div>
+
+                <div id="inputs/butons">
+                    <div id="inputs">
+                        <div id="box-e-mail">
+                            <h3>E-mail</h3>
+                            <input name="e-mail" placeholder="Digite seu e-mail" id="input-e-mail" oninput="validarEmail()" class="required">
+                            <span class="span">E-mail inválido.</span>
+                        </div>
+    
+                        <div id="senha">
+                            <section id="linha-superior-senha">
+                                <h3>Senha</h3>
+                                <h3 class="roxo">Esqueceu a senha?</h3>
+                            </section>
+                            <div id="box-input-senha">
+                                <input type="password" placeholder="Digite sua senha" id="input-senha" oninput="validarSenha()" class="required">
+                                <div id="icone" onclick="verOcultar()"></div>
+                                <span class="span">Senha vazia inválida.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="btn" onclick="submit()">Entrar</button>
+
+                    <h2 id="linha-inferior">Ainda não tem uma conta? <a href="" class="roxo">Inscreva-se</a></h2>
+                </div>
+            </div>
+        </div>
+
+        <img src="assets/img.png" alt="" class="image">
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
